@@ -1,0 +1,149 @@
+
+    
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #a744ee;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the to-do list */
+#todo-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Title styling */
+#todo-container h1 {
+  color: #4c36ff;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+#input {
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+#input:focus {
+  border-color: #4c36ff;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-button {
+  background-color: #4c36ff;
+  color: white;
+}
+
+#add-button:hover {
+  background-color: #3a28cc;
+}
+
+.edit, .delete {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit:hover {
+  background-color: #218838;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete:hover {
+  background-color: #c82333;
+}
+
+/* To-do list container styling */
+#list-container {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#list-container li {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+}
+
+.task-buttons {
+  display: flex;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  #input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #add-button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #list-container li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit, .delete {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .task-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+  

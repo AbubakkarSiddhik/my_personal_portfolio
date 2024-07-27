@@ -1,0 +1,244 @@
+
+      :root {
+    --primary-color: #f9004d;
+    --secondary-color: #4A90E2;
+    --accent-color: #FFD700;
+    --background-color: #F7F7F7;
+    --text-color: #333;
+    --white: #ffffff;
+    --dark: #1a1a1a;
+}
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body, h2 {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.landing {
+    background-image: url("pexels-pixabay-70842.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2em;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    padding: 1.2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+#logo {
+  font-variant: small-caps;
+    font-size: 1em;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+nav {
+    display: flex;
+    gap: 2em;
+    padding: 0 1em;
+}
+
+nav a {
+    font-size: 1.1em;
+    color: var(--white);
+    padding: 0.5em 1em;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+header h2 i, nav a i {
+    margin-right: .5em;
+}
+
+.maintext {
+    margin-top: 6em;
+}
+
+.tagline1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.tagline2 {
+    font-size: 1.5em;
+    color: var(--accent-color);
+}
+
+.maintext div {
+    margin-top: .75em;
+}
+
+.maintext button {
+    margin-top: 2em;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.maintext button:hover {
+    background-color: var(--secondary-color);
+}
+
+.menu, .locations {
+    margin: 2em auto;
+    max-width: 1200px;
+    padding: 2em;
+    background-color: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#menuheading, #locheading {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.menu th {
+    color: var(--secondary-color);
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+table {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.menu tr {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0;
+    border-bottom: 1px solid var(--background-color);
+}
+
+.menu td {
+    flex: 1;
+}
+
+.maincourse {
+    grid-row: span 2;
+}
+
+.locations h2 {
+    color: var(--secondary-color);
+    margin-bottom: .8em;
+}
+
+.locations div {
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 1em 2em;
+    text-align: center;
+}
+
+#copyright {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+.social-menu ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.social-menu ul li {
+    margin: 0 10px;
+}
+
+.social-menu ul li .fab {
+    font-size: 25px;
+    line-height: 40px;
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+.social-menu ul li .fab:hover {
+    color: var(--primary-color);
+}
+
+.social-menu ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    text-align: center;
+    line-height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-menu ul li a:hover {
+    transform: translateY(-5px);
+}
+
+
+
+#goTopBtn {
+          display: inline-block;
+           margin-top: 50px;
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: var(--primary-color); /* Set background color */
+            color: white; /* Set text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+            text-decoration: none;
+        }
+
+        #goTopBtn:hover {
+            background-color: var(--secondary-color); /* Add a dark-grey background on hover */
+        }
+    
