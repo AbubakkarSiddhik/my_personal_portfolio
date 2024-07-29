@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+  <form action="">
+    <header>
+      <h1>Guess The Number</h1>
+    </header>
+    
+    <div class="result">
+      <b id="bold">Current Score :</b>
+      <br>
+      <br>
+      <p id="score">10</p>
+    </div>
+
+    <div class="main">
+      <label for="value">Enter A Number Within 10</label>
+      <br>
+      <input type="number" id="value" required="">
+      <button type="button" onclick="Guess()">Confirm</button>
+    </div>
+    <div id="button">
+      <button id="retryButton" type="button" onclick="resetGame()" style="display:none;">Retry</button>
+    </div>
+  </form>
+<script src="script4.js"></script>
+
+</body>
+</html>
