@@ -1,6 +1,6 @@
 
  
-    const questions = [
+   const questions = [
         { question: "Who is known as the father of computers?", answers: ["Alan Turing", "Charles Babbage", "Bill Gates", "Steve Jobs"], correct: 1 },
         { question: "Who is the CEO of Google?", answers: ["Sundar Pichai", "Larry Page", "Sergey Brin", "Tim Cook"], correct: 0 },
         { question: "Who is the CEO of WhatsApp?", answers: ["Jan Koum", "Mark Zuckerberg", "Sundar Pichai", "Sheryl Sandberg"], correct: 0 },
@@ -35,10 +35,14 @@
         { question: "Who is the CEO of LinkedIn?", answers: ["Reid Hoffman", "Jeff Weiner", "Ryan Roslansky", "Satya Nadella"], correct: 2 },
         { question: "Who founded LinkedIn?", answers: ["Reid Hoffman", "Jeff Weiner", "Ryan Roslansky", "Satya Nadella"], correct: 0 },
         { question: "Who is the CEO of Microsoft?", answers: ["Bill Gates", "Steve Ballmer", "Satya Nadella", "Paul Allen"], correct: 2 },
-        { question: "What is the full form of 'ChatGPT'?", answers: ["Chat Generative Pre-trained Transformer", "Chat General Purpose Transformer", "Chat General Pre-trained Transformer", "Chat Generative Processing Transformer"], correct: 0 }
+        { question: "What is the full form of 'ChatGPT'?", answers: ["Chat Generative Pre-trained Transformer", "Chat General Purpose Transformer", "Chat General Pre-trained Transformer", "Chat Generative Processing Transformer"], correct: 0 },
+        { question: "Who founded Amazon?", answers: ["Jeff Bezos", "Elon Musk", "Mark Zuckerberg", "Bill Gates"], correct: 0 },
+        { question: "Who founded Tesla?", answers: ["Elon Musk, JB Straubel, Ian Wright, Marc Tarpenning, and Martin Eberhard", "Steve Jobs", "Larry Ellison", "Jeff Bezos"], correct: 0 },
+        { question: "Who is the CEO of Amazon?", answers: ["Andy Jassy", "Jeff Bezos", "Sundar Pichai", "Satya Nadella"], correct: 0 },
+        { question: "Who is known as the Father of the iPhone?", answers: ["Steve Jobs", "Bill Gates", "Mark Zuckerberg", "Tim Cook"], correct: 0 },
+        { question: "Who founded Oracle?", answers: ["Larry Ellison", "Marc Andreessen", "Reid Hoffman", "Sergey Brin"], correct: 0 }
     ];
-
-
+    
     let currentQuestionIndex = 0;
     let score = 0;
 
