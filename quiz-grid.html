@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Competition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        }
+
+        .quiz-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .quiz-item {
+            background-color: #ff6b81;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 22px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .quiz-item:hover {
+            background-color: #ff4757;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: white;
+            font-size: 40px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Quiz Competition</h1>
+
+    <div class="quiz-grid">
+        <a href="quiz.html?question=1" target="_blank" class="quiz-item">1</a>
+        <a href="quiz.html?question=2" target="_blank" class="quiz-item">2</a>
+        <a href="quiz.html?question=3" target="_blank" class="quiz-item">3</a>
+        <a href="quiz.html?question=4" target="_blank" class="quiz-item">4</a>
+        <a href="quiz.html?question=5" target="_blank" class="quiz-item">5</a>
+        <a href="quiz.html?question=6" target="_blank" class="quiz-item">6</a>
+        <a href="quiz.html?question=7" target="_blank" class="quiz-item">7</a>
+        <a href="quiz.html?question=8" target="_blank" class="quiz-item">8</a>
+        <a href="quiz.html?question=9" target="_blank" class="quiz-item">9</a>
+        <a href="quiz.html?question=10" target="_blank" class="quiz-item">10</a>
+        <a href="quiz.html?question=11" target="_blank" class="quiz-item">11</a>
+        <a href="quiz.html?question=12" target="_blank" class="quiz-item">12</a>
+        <a href="quiz.html?question=13" target="_blank" class="quiz-item">13</a>
+        <a href="quiz.html?question=14" target="_blank" class="quiz-item">14</a>
+        <a href="quiz.html?question=15" target="_blank" class="quiz-item">15</a>
+        <a href="quiz.html?question=16" target="_blank" class="quiz-item">16</a>
+        <a href="quiz.html?question=17" target="_blank" class="quiz-item">17</a>
+        <a href="quiz.html?question=18" target="_blank" class="quiz-item">18</a>
+        <a href="quiz.html?question=19" target="_blank" class="quiz-item">19</a>
+        <a href="quiz.html?question=20" target="_blank" class="quiz-item">20</a>
+    </div>
+
+</body>
+</html>
