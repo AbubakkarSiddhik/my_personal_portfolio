@@ -134,7 +134,12 @@
   width: 250px;
   height: 400px; /* Fixed height for equal-sized boxes */
   overflow: hidden;
+
 }
+#projects .card p{
+  line-height: 22px ;
+}
+
 #certifications a {
   text-decoration: none;
   color: wheat;
