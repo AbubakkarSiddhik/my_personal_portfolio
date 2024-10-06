@@ -39,9 +39,11 @@
   }
   nav ul {
     display: flex;
+    
   }
   nav ul li {
     list-style-type: none;
+    
   }
   nav ul li a {
     text-decoration: none;
@@ -320,6 +322,7 @@
       border-radius: 0 0 30px 30px;
       animation:slideDown 1s ease forwards;
       transform-origin: top;
+      z-index: 1;
     }
     @keyframes slideDown {
       from{
