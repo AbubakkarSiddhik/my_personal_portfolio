@@ -110,6 +110,68 @@ h4 {
   font-weight: 1000;
 }
 
+
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #f9004d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: white;
+  color: #f9004d;
+  cursor: pointer;
+}
+.section .skills-list, .values-list{
+  text-align: left;
+  list-style: none;
+}
+/* General styles for About Section */
+.about-content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f9004d; /* Adjusted color to match your theme */
+}
+
+.about-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.8;
+}
+
+
+
+
+/* Profile Image */
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Resume button */
 .resume-button {
   display: inline-block;
   padding: 10px 20px;
@@ -364,11 +426,11 @@ h4 {
   /* Set text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
-  padding: 15px;
+  padding: 10px;
   /* Some padding */
   border-radius: 10px;
   /* Rounded corners */
-  font-size: 18px;
+  font-size: 10px;
   /* Increase font size */
   text-decoration: none;
 }
@@ -382,6 +444,10 @@ h4 {
 @media (max-width: 600px) {
 
   .hero ul {
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
     display: flex;
     flex-direction: column;
   }
