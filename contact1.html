@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+ <style>
+  
+  
+  .parent-container{
+      font-family: 'Arial', sans-serif;
+      background:black;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contact-container {
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      margin-top: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+   
+
+    .contact-header p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .contact-form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+    }
+
+    .contact-form .btn-submit {
+      background: #f9004d;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form .btn-submit:hover {
+      background:lightgray;
+      color: #f9004d;
+    }
+
+    .contact-icons-container {
+      width: 100%;
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .contact-icons-container h4 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .contact-icons a {
+      color: #f9004d;
+      font-size: 24px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-icons a:hover {
+      color: white;
+    }
+    #para{
+        padding-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+
+        <h2 class="logo">Portfo<span>lio</span></h2>
+        <div class="ul hide">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html">about</a></li>
+            <li><a href="skills.html">skills</a></li>
+            <li><a href="certifications.html">certifications</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="contact1.html">contact</a></li>
+          </ul>
+        </div>
+        <button class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    <div class="parent-container">
+  <div class="contact-container">
+    <div class="contact-header">
+      <h1 style="color:#333; font-size:30px;">Contact Me <i class="fas fa-paper-plane"></i></h1>
+      <p>Let’s connect and create something amazing together.</p>
+    </div>
+
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name"><i class="fas fa-user"></i> Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message"><i class="fas fa-comment-dots"></i> Your Message</label>
+        <textarea id="message" name="message" placeholder="Write your message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+  </div>
+
+  <div class="contact-icons-container">
+    <p id="para">Feel free to reach out through any of the platforms below</p>
+    <div class="contact-icons">
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
