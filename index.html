@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Verification</title>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Code Box Styling */
+        .code-box {
+            background: #111;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            max-width: 350px;
+            width: 100%;
+        }
+
+        /* Heading */
+        .code-box h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: White;
+        }
+
+        /* Input Field */
+.code-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #f9004d;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.code-box input::placeholder {
+    color: #888;
+}
+
+
+        /* Input Focus Effect */
+        .code-box input:focus {
+            border-color: #f9004d;
+            outline: none;
+        }
+
+        /* Button */
+        .code-box button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background: #f9004d;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Button Hover */
+        .code-box button:hover {
+            background: #ff2e6f;
+        }
+
+        /* Message Styling */
+        .message {
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+
+        .message.success {
+            color: #27ae60;
+        }
+
+        .message.error {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="code-box" id="codeBox">
+        <h2>Enter Access Code</h2>
+        <input type="text" id="codeInput" placeholder="Enter your code">
+        <button onclick="verifyCode()">Submit</button>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        // Predefined valid code
+        const validCode = "2005";
+
+        function verifyCode() {
+            const userInput = document.getElementById("codeInput").value.trim();
+            const messageDiv = document.getElementById("message");
+
+            if (userInput === validCode) {
+                messageDiv.innerHTML = "<span class='success'>Code verified! Redirecting...</span>";
+                setTimeout(() => {
+                    window.location.href = "index.html"; // Replace with your main page URL
+                }, 2000);
+            } else {
+                messageDiv.innerHTML = "<span class='error'>Invalid code! Please try again.</span>";
+            }
+        }
+    </script>
+</body>
+</html>
