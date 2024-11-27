@@ -182,8 +182,18 @@ h1 {
     }
 }
 
-@media (max-width: 1200px) {
-    .quiz-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
+   @media (max-width: 1200px) {
+            .quiz-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            h1{
+                font-size: 40px;
+            }
+            .quiz-item{
+                font-size: 22px;
+            }
+            .quiz-grid {
+                  gap: 15px;
+                 margin-bottom: 20px;
+        } 
+        }
