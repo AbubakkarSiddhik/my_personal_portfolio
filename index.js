@@ -9,8 +9,8 @@ function verifyCode() {
     if (userInput === validCode) {
         messageDiv.innerHTML = "<span class='success'>Code verified! Redirecting...</span>";
         setTimeout(() => {
-            window.location.href = "index1.html"; // Replace with your main page URL
-        }, 2000);
+            window.location.href = "index1.html"; 
+        }, 1000);
     } else {
         messageDiv.innerHTML = "<span class='error'>Invalid code! Please try again.</span>";
     }
