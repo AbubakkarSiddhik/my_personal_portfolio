@@ -5,66 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills Section</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Skill Container */
-        .skill-container {
-            width: 80%;
-            margin: 40px auto;
-            text-align: center;
-            color: white;
-        }
-
-        .skill-container h4 {
-            font-size: 30px;
-            color: #f9004d;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-        }
-
-        /* Individual Skill Section */
-        .skill {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .skill p {
-            font-size: 18px;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        /* Skill Bar */
-        .skill-bar {
-            width: 100%;
-            background-color: #333;
-            border-radius: 20px;
-            overflow: hidden;
-            height: 30px;
-            position: relative;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        /* Progress Bar */
-        .progress {
-            height: 100%;
-            width: 0; /* Start with width 0 for animation */
-            background: linear-gradient(90deg, #f9004d, #ff4500);
-            border-radius: 20px 0 0 20px;
-            box-shadow: 0 0 10px rgba(249, 0, 77, 0.5);
-            animation: skillProgress 2s ease-in-out forwards;
-        }
-
-        /* Animation */
-        @keyframes skillProgress {
-            from {
-                width: 0;
-            }
-            to {
-                width: var(--progress-width);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="skills.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -74,10 +15,10 @@
             <ul>
                 <li><a href="index1.html" target="_blank">home</a></li>
                 <li><a href="index1.html">about</a></li>
-                <li><a href="skills.html" target="_blank">skills</a></li>
+                <li><a href="skills.html">skills</a></li>
                 <li><a href="certifications.html" target="_blank">certifications</a></li>
                 <li><a href="projects.html" target="_blank">projects</a></li>
-                <li><a href="contact1.html" target="_blank">contact</a></li>
+                <li><a href="contact1.html">contact</a></li>
         </div>
         <button class="menu">
             <span></span>
@@ -125,13 +66,7 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll(".progress").forEach((bar) => {
-                bar.style.width = bar.style.getPropertyValue("--progress-width");
-            });
-        });
-    </script>
+<script src="skills.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
