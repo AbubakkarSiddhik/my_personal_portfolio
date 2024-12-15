@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e2e2e9;
+        }
+
+        .parent-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-evenly;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .box {
+            width: 300px;
+            text-align: center;
+            padding: 30px;
+            margin: 20px;
+            background-color: #d8d4d4;
+            border-radius: 10px;
+        }
+
+        .box h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .box input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .box button {
+            background-color: #007bff;
+            color: #fff;
+            margin-top:15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .box button:hover {
+            background-color: #0056b3;
+        }
+
+        .container-image {
+            width: 300px;
+            height: 240px; /* Set a fixed height */
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #qrcode {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="container">
+            <div class="box">
+                <h1>QR Code Generator</h1>
+                <input type="text" id="text" placeholder="Enter text or URL" />
+                <button onclick="generateQRCode()">Generate QR Code</button>
+            </div>
+            <div class="container-image">
+                <div id="qrcode"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        function generateQRCode() {
+            const text = document.getElementById("text").value;
+            const qrCodeContainer = document.getElementById("qrcode");
+            qrCodeContainer.innerHTML = ""; // Clear previous QR code
+
+            if (text.trim() !== "") {
+                new QRCode(qrCodeContainer, {
+                    text: text,
+                    width: 200,
+                    height: 200
+                });
+            } else {
+                alert("Please enter text or a URL!");
+            }
+        }
+    </script>
+</body>
+
+</html>
